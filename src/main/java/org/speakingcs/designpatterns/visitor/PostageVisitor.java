@@ -6,7 +6,7 @@ public class PostageVisitor implements Visitor {
 
 	@Override
 	public void visit(Book book) {
-			totalPostageForCart += book.getWeight() * 2;
+			totalPostageForCart += book.getPrice();
 	}
 
 	public double getTotalPostage() {
